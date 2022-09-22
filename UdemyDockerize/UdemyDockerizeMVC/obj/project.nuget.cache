@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "F+/2y7ISB0/lsI1gBiT9OMjIrvMcKGNXF5FScekx35l3Xy7YiiiEl50Nn2cU8E65GQiCVjXxeBQU0HNj+dyTug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erhaa\\source\\repos\\UdemyDockerize\\UdemyDockerizeMVC\\UdemyDockerizeMVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erhaa\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}

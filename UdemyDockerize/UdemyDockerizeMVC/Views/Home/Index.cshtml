@@ -1,0 +1,40 @@
+﻿@model IEnumerable<string>
+
+
+<div class="container gallery-container">
+
+    <h1>All Images</h1>
+    <p class="page-description text-center">Save new Image!</p>
+    <form asp-action="ImageSave" method="POST" enctype="multipart/form-data">
+        <div class="form-group new-image-form-content">
+            <input class="form-control-file" type="file" name="imageFile" />
+            <button class="btn btn-success" type="submit">Save Image</button>
+        </div>
+    </form>
+
+@*    <form method="POST" asp-action="ImageShow">
+        <input type="text" name="name" />
+        <input type="submit" value="Sil" />
+    </form>*@
+
+    <div class="tz-gallery">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-4 photograph">
+                    <form asp-action="ImageDelete" method="POST">
+                        <button type="submit" name="name" value="@item" class="badge badge-danger delete-button">Delete</button>  
+                    </form>
+                    <div class="thumbnail">
+                        <a class="lightbox" href="/images/@item">
+                            <img src="/images/@item" alt="image">
+                        </a>
+                        <div class="caption">
+                            <h3>@item</h3>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
